@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+
+}
+
+body {
+    /* background-image: url(./images/bg-main-desktop.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.front {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+#cardlogo {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 7%;
+    top: 12%;
+}
+
+#cardfront:before {
+    box-shadow: inset 1px 1px 5px black;
+}
+
+
+.name {
+    display: flex;
+    align-items: centre;
+    margin-top: 5%;
+    padding: 0 8%;
+    font-size: 80%;
+}
+
+.textdetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 58%;
+    width: 100%;
+    color: white;
+}
+
+.textdetails h2 {
+    padding-left: 8%;
+    font-size: 170%;
+    letter-spacing: 4px;
+}
+
+.textdetails h3 {
+    margin-right: auto;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.textdetails h4 {
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.back {
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+}
+
+#cardback:before {
+    box-shadow: 5px 5px 5px black;
+}
+
+.back h5 {
+    position: absolute;
+    top: 45%;
+    font-size: 80%;
+    left: 80%;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.details-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 65%;
+    margin-top: 14%;
+    /* border: 2px solid black;  */
+    /* display: none; */
+
+}
+
+.details-input label {
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+#date {
+    width: 10%;
+}
+
+.horizontal {
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    border: 2px solid hsl(270, 3%, 87%);
+    height: 2.3rem;
+    border-radius: 0.4rem;
+    margin-bottom: 3%;
+    padding-left: 1rem;
+    font-weight: 500;
+    width: 400px;
+    /* position: sticky; */
+}
+
+input::placeholder {
+    color: hsl(279, 6%, 55%);
+
+    opacity: 70%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: greenyellow;
+}
+
+.input-control.error input {
+    border-color: hsl(0, 100%, 66%);
+}
+
+.input-control .error {
+    color: hsl(0, 100%, 66%);
+    font-size: 9px;
+    height: 15px;
+
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    /* justify-content: space-between; */
+}
+
+label {
+    color: black;
+}
+
+.container1 {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.mm {
+    width: 70%;
+}
+
+.cvc {
+    width: 35%;
+}
+
+button {
+    background-color: hsl(278, 68%, 11%);
+    width: 100%;
+    height: 10%;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+input {
+    color: hsl(278, 68%, 11%);
+    cursor: pointer;
+}
+
+input:focus {
+
+    border-color: hsl(278, 68%, 11%);
+
+}
+
+.thank {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 100%;
+    margin-top: 30%;
+    /* border: 1px solid black; */
+}
+
+ .hidden{
+    display: none;
+}  
+.pa {
+    width: 200px;
+}
+
+@media only screen and (max-width : 380px) {
+    .bg1 {
+        height: 33%;
+        width: 350px;
+    }
+
+
+    #cardback {
+        width: 200px;
+
+    }
+
+    .back {
+        top: 1%;
+        left: 35%;
+    }
+
+    h5 {
+        position: absolute;
+        margin-top: -107%;
+        margin-left: -7%;
+        font-size: 5.7px;
+    }
+
+    #cardfront {
+        width: 200px;
+    }
+
+    .textdetails {
+        font-size: 5.7px;
+    }
+
+    .details-input {
+        width: 65%;
+        margin-left: -57%;
+        margin-top: 45%;
+        /* border: 2px solid black; */
+
+    }
+
+    input {
+        width: 200px;
+        margin-bottom: -3%;
+    }
+
+    .thank {
+        margin-left: -50%;
+        margin-top: 46%;
+        align-items: center;
+    }
+
+    .pa {
+        width: 172px;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    .button2 {
+        width: 200px;
+    }
+
+    .front {
+        position: absolute;
+        z-index: 1;
+    }
+}
