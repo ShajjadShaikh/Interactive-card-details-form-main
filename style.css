@@ -297,7 +297,7 @@ input:focus {
 
     .back h5 {
         position: absolute;
-        top: 10%;
+        top: 12%;
         left: 80%;
     }
 
@@ -314,22 +314,19 @@ input:focus {
 
     .details-input {
         position: relative;
-        left: -64%;
-        /* right: 99%; */
-        /* top: -6%; */
-        bottom: -34%;
-        width: 90%;
-    }
-    #uname{
-        width: 90%;
+        right: 50%;
+        top: 32%;
+        width: 100%;
     }
     input{
-        width: 90%;
+        /* border-color: aqua; */
+        width: 250px;
+        margin-bottom: -10px;
     }
 
     .thank {
         position: relative;
-        left: -89%;
+        left: 50%;
         /* right: 177%; */
         bottom: -50%;
         margin: 0% 0%;
@@ -348,80 +345,3 @@ input:focus {
 
 }
 
-
-@media only screen and (max-width : 375px) {
-    .bg1 {
-        height: 33%;
-        margin: 0% 0%;
-        width: 100%;
-        padding: 0% 0%;
-        display: flex;
-        position: absolute;
-    }
-
-    .front {
-        position: absolute;
-        top: 15%;
-        z-index: 1;
-        left: 2%;
-    }
-
-    #cardfront {
-        width: 80%;
-    }
-
-    .textdetails {
-        font-size: 9px;
-    }
-
-    .back {
-        position: absolute;
-        top: 3%;
-        left: 18%;
-    }
-
-    .back h5 {
-        position: absolute;
-        top: 10%;
-        left: 80%;
-    }
-
-    #cardback {
-        width: 323px;
-    }
-
-    .textdetails h3 {
-        margin-right: 40%;
-
-
-    }
-
-
-    .details-input {
-        position: relative;
-        left: -64%;
-        /* right: 99%; */
-        /* top: -6%; */
-        bottom: -34%;
-    }
-
-    .thank {
-        position: relative;
-        left: -89%;
-        /* right: 177%; */
-        bottom: -50%;
-        margin: 0% 0%;
-        padding: 0% 0%;
-        align-items: center;
-        text-align: center;
-    }
-
-    #submit_btn {
-        width: 100%;
-    }
-
-    .button2 {
-        height: 5%;
-    }
-
-}
